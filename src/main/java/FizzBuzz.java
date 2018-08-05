@@ -1,5 +1,9 @@
 class FizzBuzz {
     String say(int input) {
+        if(input % 3 == 0 && input % 5 == 0 && input % 7 == 0){
+            return "FizzBuzzWhizz";
+        }
+
         if(input % 3 == 0 && input % 5 == 0){
             return "FizzBuzz";
         }
