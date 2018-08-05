@@ -14,4 +14,10 @@ class FizzBuzzTest {
         FizzBuzz fizzBuzz = new FizzBuzz();
         assertThat(fizzBuzz.say(3)).isEqualTo("Fizz");
     }
+
+    @Test
+    void should_return_fizz_when_input_is_6() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertThat(fizzBuzz.say(6)).isEqualTo("Fizz");
+    }
 }
