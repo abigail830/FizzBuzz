@@ -36,4 +36,9 @@ class FizzBuzzTest {
     void should_return_fizz_buzz_when_input_is_15() {
         assertThat(fizzBuzz.say(15)).isEqualTo("FizzBuzz");
     }
+
+    @Test
+    void should_return_whizz_when_input_is_7() {
+        assertThat(fizzBuzz.say(7)).isEqualTo("Whizz");
+    }
 }
