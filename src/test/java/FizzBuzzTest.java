@@ -46,4 +46,9 @@ class FizzBuzzTest {
     void should_return_fizz_whizz_when_input_is_3_times_7() {
         assertThat(fizzBuzz.say(3 * 7)).isEqualTo("FizzWhizz");
     }
+    
+    @Test
+    void should_return_buzz_whizz_when_input_is_5_times_7() {
+        assertThat(fizzBuzz.say(5 * 7)).isEqualTo("BuzzWhizz");
+    }
 }

@@ -8,6 +8,10 @@ class FizzBuzz {
             return "FizzWhizz";
         }
 
+        if(input % 5 == 0 && input % 7 == 0){
+            return "BuzzWhizz";
+        }
+
         if(input % 3 == 0){
             return "Fizz";
         }
