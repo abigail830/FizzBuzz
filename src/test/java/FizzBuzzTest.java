@@ -8,4 +8,10 @@ class FizzBuzzTest {
        FizzBuzz fizzBuzz = new FizzBuzz();
        assertThat(fizzBuzz.say(1)).isEqualTo("1");
     }
+
+    @Test
+    void should_return_fizz_when_input_is_3() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertThat(fizzBuzz.say(3)).isEqualTo("Fizz");
+    }
 }
