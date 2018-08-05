@@ -1,5 +1,5 @@
 class FizzBuzz {
-    String say(int input) {
+    String sayOld(int input) {
         if(input % 3 == 0 && input % 5 == 0 && input % 7 == 0){
             return "FizzBuzzWhizz";
         }
@@ -31,7 +31,7 @@ class FizzBuzz {
         return String.valueOf(input);
     }
 
-    String sayRefactored(int input) {
+    String say(int input) {
         String result = "";
 
         if(input % 3 == 0){
