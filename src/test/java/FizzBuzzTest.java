@@ -33,12 +33,17 @@ class FizzBuzzTest {
     }
 
     @Test
-    void should_return_fizz_buzz_when_input_is_15() {
-        assertThat(fizzBuzz.say(15)).isEqualTo("FizzBuzz");
+    void should_return_fizz_buzz_when_input_is_3_time_5() {
+        assertThat(fizzBuzz.say(3 * 5)).isEqualTo("FizzBuzz");
     }
 
     @Test
     void should_return_whizz_when_input_is_7() {
         assertThat(fizzBuzz.say(7)).isEqualTo("Whizz");
+    }
+
+    @Test
+    void should_return_fizz_whizz_when_input_is_3_times_7() {
+        assertThat(fizzBuzz.say(3 * 7)).isEqualTo("FizzWhizz");
     }
 }
